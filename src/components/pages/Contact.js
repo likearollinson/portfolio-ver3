@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-    <div>
+    <div className="tab-content">
       <h1>Contact Me</h1>
       <p>
         Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis

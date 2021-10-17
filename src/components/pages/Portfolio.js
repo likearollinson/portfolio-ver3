@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Portfolio() {
   return (
-    <div>
+    <div className="tab-content">
       <h1>Portfolio</h1>
       <p>
         Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
