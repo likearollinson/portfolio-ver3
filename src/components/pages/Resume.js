@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Resume() {
     return (
-        <div>
+        <div className="tab-content">
             <h1>Resume</h1>
             <p>
                 Resume...Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.

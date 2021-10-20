@@ -1,17 +1,31 @@
 import React from 'react';
+import FadeIn from 'react-fade-in';
+import profile from '../../assets/images/brad.png'
+
+const styles = {
+  profile: {
+    width: '100%',
+    borderRadius: '1%',
+    marginTop: '15px'
+  }
+}
 
 export default function AboutMe() {
   return (
-    <div className="tab-content">
-      <h1>About Me</h1>
-      <p>
-        Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
-        Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
-        mollis diam. Nunc aliquet risus ac finibus porta. Nam quis arcu non
-        lectus tincidunt fermentum. Suspendisse aliquet orci porta quam semper
-        imperdiet. Praesent euismod mi justo, faucibus scelerisque risus cursus
-        in. Sed rhoncus mollis diam, sit amet facilisis lectus blandit at.
-      </p>
-    </div>
+    <FadeIn transitionDuration="1000">
+      <div className="container tab-content">
+        <div className="row align-items-start">
+          <div className="col-8">
+            <h1>About Me</h1>
+            <p>
+              As a student at UNC Chapel Hill's code academy focusing on Full Stack Development, I am looking to utilize the skills I have learned to make a positive impact to your team. I am a quick learner and am looking for a position that will help to expand my skills while contributing to the company.
+            </p>
+          </div>
+          <div className="col-4">
+            <img src={profile} alt="profile of brad rollinson" style={styles.profile} />
+          </div>
+        </div>
+      </div>
+    </FadeIn>
   );
 }
