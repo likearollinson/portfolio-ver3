@@ -9,8 +9,8 @@ const styles = {
         position: 'fixed',
         bottom: '0',
         height: '75px',
-        display: 'flex',
-        justifyContent: 'center'
+        width: '50%',
+        margin: '0 auto'
     },
     github: {
         height: '100%'

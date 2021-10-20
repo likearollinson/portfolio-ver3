@@ -1,14 +1,13 @@
-import React, { useState } from 'react';
+import * as React from 'react';
 import Navbar from './Navbar';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Contact from './pages/Contact';
 import Footer from './Footer';
-import 'bootstrap/dist/js/bootstrap.min.js';
 
 export default function PortfolioContainer() {
-  const [currentPage, setCurrentPage] = useState('About Me');
+  const [currentPage, setCurrentPage] = React.useState('About Me');
 
   // This method is checking to see what the value of `currentPage` is. Depending on the value of currentPage, we return the corresponding component to render.
   const renderPage = () => {

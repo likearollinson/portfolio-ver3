@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
@@ -8,7 +8,7 @@ function Navbar({ currentPage, handlePageChange }) {
       <div className="container-fluid">
         <a className="navbar-brand" href="#about-me"
           onClick={() => handlePageChange('About Me')}>Brad Rollinson</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div id="navbarNav" className="navbar-collapse collapse justify-content-end">
