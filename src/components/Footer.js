@@ -9,27 +9,41 @@ const styles = {
         position: 'fixed',
         bottom: '0',
         height: '75px',
-        width: '50%',
+        width: '100%',
         margin: '0 auto'
     },
     github: {
-        height: '100%'
+        height: '95%'
     },
     linkedin: {
-        height: '100%'
+        height: '95%'
     },
     email: {
-        height: '95%',
+        height: '90%',
         marginLeft: '5px'
     }
 }
 
 function Footer() {
+
+    function size100(e) {
+        e.target.style.height = '100%';
+    }
+
+    function size95(e) {
+        e.target.style.height = '95%';
+    }
+
+    function size90(e) {
+        e.target.style.height = '90%';
+    }
+
+
     return (
-        <div style={styles.footer}>
-            <img src={github} alt="github logo" style={styles.github} />
-            <img src={linkedin} alt="github logo" style={styles.linkedin} />
-            <img src={email} alt="github logo" style={styles.email} />
+        <div className="d-flex justify-content-center" style={styles.footer}>
+            <a href="https://github.com/likearollinson/"><img src={github} alt="github logo" style={styles.github} onMouseOver={size100} onMouseLeave={size95} /></a>
+            <a href="https://www.linkedin.com/in/brad-rollinson-220/"><img src={linkedin} alt="linkedin logo" style={styles.linkedin} onMouseEnter={size100} onMouseLeave={size95} /></a>
+            <a href="mailto:brad.w.rollinson@gmail.com"><img src={email} alt="email logo" style={styles.email} onMouseEnter={size95} onMouseLeave={size90} /></a>
         </div>
     )
 }
