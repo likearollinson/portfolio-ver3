@@ -1,26 +1,51 @@
 import React from 'react';
 import FadeIn from 'react-fade-in';
+import resume from '../../assets/pdf/resume.pdf'
 
 export default function Resume() {
     return (
         <div className="tab-content">
             <FadeIn>
                 <h1>Resume</h1>
-                <p>
-                    Resume...Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-                    Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-                    dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-                    sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-                    sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-                    vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-                    libero. Class aptent taciti sociosqu ad litora torquent per conubia
-                    nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-                    lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                    Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-                    in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-                    bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-                    est ligula suscipit velit, sed bibendum turpis dui in sapien.
-                </p>
+                <div className="container">
+                    <div className="row align-items-start">
+                        <div className="col-6">
+                            <h3>Skills</h3>
+                            <ul>
+                                <li>
+                                    HTML</li>
+                                <li>CSS</li>
+                                <li>JAVASCRIPT</li>
+                                <li>JQUERY</li>
+                                <li>BOOTSTRAP</li>
+                                <li>NODE.JS</li>
+                                <li>EXPRESS</li>
+                                <li>MYSQL</li>
+                                <li>NOSQL</li>
+                                <li>REACT</li>
+                            </ul>
+                        </div>
+                        <div className="col-6">
+                            <button type="button" className="btn btn-info btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</button>
+                            <div id="resumeModal" className="modal fade" role="dialog">
+                                <div className="modal-dialog modal-lg">
+                                    <div className="modal-content">
+                                        <div className="modal-header">
+                                            <button type="button" className="close" data-bs-dismiss="modal">&times;</button>
+                                            <h4 className="modal-title">Brad Rollinson's Resume</h4>
+                                        </div>
+                                        <div className="modal-body">
+                                            <embed src={resume} frameborder="0" width="100%" height="450px"></embed>
+                                            <div className="modal-footer">
+                                                <button type="button" className="btn btn-default" data-bs-dismiss="modal">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </FadeIn>
         </div>
     );
