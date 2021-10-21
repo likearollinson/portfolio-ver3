@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import FadeIn from 'react-fade-in';
 import { validateEmail } from '../utils/helpers';
 import emailImg from '../../assets/images/email.png';
+import { Toast } from 'bootstrap';
 
 const styles = {
   form: {
@@ -12,6 +13,9 @@ const styles = {
   },
   textarea: {
     width: '350px'
+  },
+  toastImg: {
+    height: '20px'
   },
   toastZPosition: {
     zIndex: "11"
@@ -53,12 +57,18 @@ export default function Contact() {
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-
+    const toastElList = [].slice.call(document.querySelectorAll('.toast'))
+    const toastList = toastElList.map(function (toastEl) {
+      // Creates an array of toasts (it only initializes them)
+      return new Toast(toastEl) // No need for options; use the default options
+    });
+    toastList.forEach(toast => toast.show()); // This show them
     // If everything goes according to plan, we want to clear out the input after a successful registration.
     setUserName('');
     setMessage('');
     setEmail('');
   };
+
   return (
     <div className="tab-content">
       <FadeIn>
@@ -99,16 +109,16 @@ export default function Contact() {
             />
           </div>
           <button type="button" className="btn btn-dark btn-primary" id="liveToastBtn" onClick={handleFormSubmit}>Submit</button>
-          <div className="position-fixed bottom-0 end-0 p-3" style={styles.toastZPosition}>
+          <div className="toast position-fixed bottom-0 end-0 p-3" style={styles.toastZPosition}>
             <div id="liveToast" className="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
               <div className="toast-header">
-                <img src={emailImg} alt="email" />
+                <img src={emailImg} alt="email" style={styles.toastImg} />
                 <strong className="me-auto">Sent!</strong>
                 <small>now</small>
                 <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
               </div>
               <div className="toast-body">
-                Thanks for sending a message!Brad will get back to you soon.</div>
+                Thanks for sending a message! Brad will get back to you soon.</div>
             </div>
           </div>
         </form >
