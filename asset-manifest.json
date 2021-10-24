@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.d650da81.chunk.css",
+    "main.js": "/react-portfolio/static/js/main.4448a84d.chunk.js",
+    "main.js.map": "/react-portfolio/static/js/main.4448a84d.chunk.js.map",
+    "runtime-main.js": "/react-portfolio/static/js/runtime-main.e666ca31.js",
+    "runtime-main.js.map": "/react-portfolio/static/js/runtime-main.e666ca31.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/react-portfolio/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.27bacf5e.chunk.js": "/react-portfolio/static/js/2.27bacf5e.chunk.js",
+    "static/js/2.27bacf5e.chunk.js.map": "/react-portfolio/static/js/2.27bacf5e.chunk.js.map",
+    "static/js/3.2097c891.chunk.js": "/react-portfolio/static/js/3.2097c891.chunk.js",
+    "static/js/3.2097c891.chunk.js.map": "/react-portfolio/static/js/3.2097c891.chunk.js.map",
+    "index.html": "/react-portfolio/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/react-portfolio/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.d650da81.chunk.css.map": "/react-portfolio/static/css/main.d650da81.chunk.css.map",
+    "static/js/2.27bacf5e.chunk.js.LICENSE.txt": "/react-portfolio/static/js/2.27bacf5e.chunk.js.LICENSE.txt",
+    "static/media/applitrak.7727b4df.gif": "/react-portfolio/static/media/applitrak.7727b4df.gif",
+    "static/media/brad.1f3fb0ff.png": "/react-portfolio/static/media/brad.1f3fb0ff.png",
+    "static/media/email.9915287e.png": "/react-portfolio/static/media/email.9915287e.png",
+    "static/media/github.feba5396.png": "/react-portfolio/static/media/github.feba5396.png",
+    "static/media/linkedin.a680cb8a.png": "/react-portfolio/static/media/linkedin.a680cb8a.png",
+    "static/media/notetaker.7101494b.gif": "/react-portfolio/static/media/notetaker.7101494b.gif",
+    "static/media/resume.e63975c8.pdf": "/react-portfolio/static/media/resume.e63975c8.pdf",
+    "static/media/skilletshaker.8ef14424.gif": "/react-portfolio/static/media/skilletshaker.8ef14424.gif",
+    "static/media/weather.926c7146.gif": "/react-portfolio/static/media/weather.926c7146.gif"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e666ca31.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.27bacf5e.chunk.js",
+    "static/css/main.d650da81.chunk.css",
+    "static/js/main.4448a84d.chunk.js"
+  ]
+}
