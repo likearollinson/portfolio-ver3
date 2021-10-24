@@ -6,22 +6,16 @@ import weather from '../../assets/images/weather.gif'
 import notetaker from '../../assets/images/notetaker.gif'
 
 const styles = {
-  carouselInner: {
-    width: '75%',
-    margin: 'auto'
-  },
   text: {
     backgroundColor: 'white',
     borderRadius: '5%'
   },
+  carouselInner: {
+    width: '75%',
+    margin: 'auto'
+  },
   link: {
     color: 'black'
-  },
-  iconNext: {
-    backgroundImage: "url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E)"
-  },
-  iconPrev: {
-    backgroundImage: "url(data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E)"
   }
 }
 
@@ -31,13 +25,13 @@ export default function Portfolio() {
     <FadeIn>
       <div className="tab-content">
         <h1>Portfolio</h1>
-        <div style={styles.carouselContainer}>
-          <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div >
+          <div id="myCarousel" className="carousel carousel-dark slide" data-bs-ride="carousel">
             <div className="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
             </div>
             <div className="carousel-inner" style={styles.carouselInner}>
               <div className="carousel-item active" data-bs-interval="10000">
@@ -48,7 +42,7 @@ export default function Portfolio() {
                   <a href="https://immense-eyrie-11789.herokuapp.com/login" target="_blank" rel="noreferrer"><p style={styles.link}>Deployed Application</p></a>
                 </div>
               </div>
-              <div className="carousel-item" data-bs-interval="2000">
+              <div className="carousel-item" data-bs-interval="10000">
                 <img src={skilletshaker} className="d-block w-100" alt="sample of skilletshaker app" />
                 <div className="carousel-caption d-none d-md-block" style={styles.text}>
                   <h2>Skillet & Shaker</h2>
@@ -56,7 +50,7 @@ export default function Portfolio() {
                   <a href="https://likearollinson.github.io/recipe-finder/" target="_blank" rel="noreferrer"><p style={styles.link}>Deployed Application</p></a>
                 </div>
               </div>
-              <div className="carousel-item">
+              <div className="carousel-item" data-bs-interval="10000">
                 <img src={notetaker} className="d-block w-100" alt="sample of notetaker app" />
                 <div className="carousel-caption d-none d-md-block" style={styles.text}>
                   <h2>Note Taker</h2>
@@ -65,8 +59,8 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
-              <img src={weather} className="d-block w-100" alt="sample of weather app" />
+            <div className="carousel-item" data-bs-interval="10000">
+              <img src={weather} className="d-block w-100 h-100" alt="sample of weather app" />
               <div className="carousel-caption d-none d-md-block" style={styles.text}>
                 <h2>Weather Dashboard</h2>
                 <a href="https://github.com/likearollinson/unc-hw-6-weather-dashboard" target="_blank" rel="noreferrer"><p style={styles.link}>GitHub Repository</p></a>
@@ -74,14 +68,6 @@ export default function Portfolio() {
               </div>
             </div>
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
         </div>
       </div >
     </FadeIn >
