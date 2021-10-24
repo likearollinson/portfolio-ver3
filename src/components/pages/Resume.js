@@ -9,7 +9,7 @@ export default function Resume() {
                 <h1>Resume</h1>
                 <div className="container">
                     <div className="row align-items-start">
-                        <div className="col-6">
+                        <div className="col-md-6 col-sm-12">
                             <h3>Skills</h3>
                             <ul>
                                 <li>
@@ -25,7 +25,7 @@ export default function Resume() {
                                 <li>REACT</li>
                             </ul>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6 col-sm-12">
                             <button type="button" className="btn btn-info btn-lg btn-dark" data-bs-toggle="modal" data-bs-target="#resumeModal">Resume</button>
                             <div id="resumeModal" className="modal fade" role="dialog">
                                 <div className="modal-dialog modal-lg">
